@@ -1,0 +1,36 @@
+body, h4, h2 {
+  color: #002855;
+  text-shadow: 1px 1px #EAAA00;
+}
+
+img {
+  margin-left: 30px;
+  width: 125px;
+  length: 125px;
+}
+
+.pad {
+  margin-left: 50px;
+}
+
+.warning {
+  color: red;
+  font-style: italic;
+}
+
+.results {
+  text-decoration: underline;
+}
+
+.btn {
+  margin-right: 10px;
+}
+
+.btn-warning {
+  color: white;
+  background-color: #EAAA00;
+}
+
+.btn-primary {
+  background-color: #002855;
+}

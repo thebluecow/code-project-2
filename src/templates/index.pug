@@ -1,0 +1,44 @@
+extends ./layout.pug
+
+block content
+  .container
+  img(src='static/images/wvu.png')
+  .pad
+    h2 Coding Project 2
+    .row.operands
+      .col-lg-4
+        .form-group
+          label(for='operand_one') Operand 1
+          input#operand_one.form-control(type='text', placeholder='Operand 1')
+      .col-lg-4
+        .form-group
+          label(for='operand_two') Operand 2
+          input#operand_two.form-control(type='text', placeholder='Operand 2')
+    br
+    .row
+      .col-lg-4
+        .form-group
+          label(for='operation') Operations
+          select#operation.form-control
+            option(value='add') Add
+            option(value='subtract') Subtract
+            option(value='multiply') Multiply
+            option(value='divide') Divide
+            option(value='sqrt') Square Root
+            option(value='exponent') Exponent
+      .col-lg-4
+        .form-group
+          label(for='operation') Base
+          select#base.form-control
+            option(value='10') Ten
+            option(value='2') Binary
+            option(value='8') Octal
+            option(value='16') Hex
+    button.btn.btn-primary(onclick='doMath()') Math!
+    button.btn.btn-warning(onclick='reset()') Reset
+    br
+    br
+    .row
+      .col-lg-4
+        h4.results Results
+          h5#result
